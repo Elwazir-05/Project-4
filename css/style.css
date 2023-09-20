@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+:root {
+  --maincolor: #7b5244;
+  --subcolor: #333;
+}
+.pd-y {
+  padding-top: 65px;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+.list-unstyled {
+  list-style: none;
+}
+
+.section-padding {
+  padding: 40px 0px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.section-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.section-header .line {
+  display: block;
+  width: 100px;
+  margin: auto;
+  height: 2px;
+  background: var(--maincolor);
+  transition: width 0.5s;
+}
+
+.section-header:hover .line {
+  width: 150px;
+}

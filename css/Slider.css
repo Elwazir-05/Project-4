@@ -1,0 +1,26 @@
+/* slider */
+section.slider img {
+  width: 100%;
+}
+section.slider ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.slider ul li {
+  width: 10px;
+  height: 10px;
+  margin: 0 3px;
+  margin-top: -26px;
+  background: black;
+  border-radius: 50%;
+  opacity: 0.7;
+  transition: background-color, opacity 0.5s;
+  transform: translate(-50%, -50%);
+}
+section.slider ul li:hover {
+  background-color: white;
+  width: 13px;
+  height: 13px;
+  opacity: 1;
+}

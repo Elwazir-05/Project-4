@@ -1,0 +1,90 @@
+/* discount */
+.discount {
+  margin: 45px 0px;
+  display: flex;
+}
+.discount-desc {
+  flex: 2;
+  background: #d6bca2;
+  padding: 20px;
+  position: relative;
+  transition: transform 0.2s;
+  opacity: 0.8;
+}
+.discount-desc:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  z-index: 10;
+}
+.discount-desc .top {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+.discount-desc .top .icon {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-size: 50px;
+  color: var(--maincolor);
+}
+
+.discount-desc .top + p {
+  line-height: 1.7;
+}
+.discount-desc .top > h2,
+span {
+  padding-left: 10px;
+}
+
+.discount-desc .bolletes span {
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background: var(--maincolor);
+  margin-left: 10px;
+}
+.discount-desc .bolletes {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-align: right;
+}
+
+.discount-item {
+  flex: 1;
+  height: 300px;
+  position: relative;
+}
+
+.discount-item-info {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+}
+.discount-item-info h3 {
+  font-weight: normal;
+  color: var(--maincolor);
+}
+.discount-item-info h2 {
+  font-size: 20px;
+}
+
+.discount-item.c2,
+.discount-item.c3 {
+  background-size: cover;
+  transition: transform 0.2s;
+  opacity: 0.8;
+}
+.discount-item.c2 {
+  background-image: url(../images/cms-banner-1.jpg);
+  margin: 0 20px;
+}
+.discount-item.c3 {
+  background-image: url(../images/cms-banner-2.jpg);
+}
+.discount-item.c2:hover,
+.discount-item.c3:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
